@@ -1,0 +1,1013 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+
+#nav {
+    height: 13vh;
+    width: 100vw;
+    /* background-color: rosybrown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: fixed;
+    z-index: 9999;
+    /* margin-top: 20px; */
+}
+
+#nav #part2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#nav #part2 a {
+    font-size: 17px;
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+    font-weight: 100;
+    margin: 0px 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+#nav #part2 a:nth-last-child(1) {
+    border: 0.2px solid rgb(57, 57, 57);
+    font-size: 18px;
+    padding: 9px 13px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+#green #hara {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(107, 240, 173);
+    position: absolute;
+    left: -100%;
+    transition: left 0.5s ease;
+    z-index: -1;
+}
+
+#green:hover #hara {
+    left: 0%;
+}
+
+#nav #part2 a:nth-last-child(1) img {
+    padding-left: 25px;
+    font-size: 15px;
+}
+
+#lhrh{
+    /* width: 100vw; */
+    height: 100vh;
+    /* background-color: wheat; */
+    display: flex;
+    position: relative;
+}
+#leftcontent{
+    position: relative;
+    width: 30vw;
+    height: 80vh;
+    /* background-color: green; */
+}
+#leftcontent .img{
+    top: 55vh;
+    left: 20vw;
+    height: 65vh;
+    width: 22vw;
+    position: relative;
+    /* background-color: black; */
+    transform: translate(-50%,-50%);
+}
+#leftcontent .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#rightcontent{
+    top: 58vh;
+    left: 35vw;
+    position: relative;
+    height: 88vh;
+    width: 70vw;
+    /* background-color: rgb(45, 45, 153); */
+    transform: translate(-50%,-50%);
+}
+.imgr{
+    height: 35vh;
+    width: 20vw;
+    /* background-color: red; */
+    position: relative;
+    top: 10vh;
+    left: 17vw;
+}
+#rightcontent .imgr img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.imgr2{
+    position: relative;
+    left: 39vw;
+    height: 35vh;
+    width: 17vw;
+    bottom: -5vh;
+    /* background-color: rgb(23, 227, 81); */
+}
+#rightcontent .imgr2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+/* .contactus:hover .hara{
+display: block;
+transition: left ease 5s;
+left: 0%;
+} */
+.ri-arrow-right-line{
+    /* font-size: 2vw; */
+    /* height: 10px; */
+    /* width: 1000px; */
+}
+#cntrcntnt{
+    width: 80vw;
+    position: absolute;
+    top: 58vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: wheat; */
+    align-items: center;
+    padding: 5vh 0;
+    flex-wrap: wrap;
+}
+#cnttxt{
+    /* width: 50vw; */
+    font-size: 2vw;
+    font-weight: 900;
+}
+#cnttxt h1{
+    font-size: 7vw;
+    font-weight: 500;
+}
+
+#cnttxt h1::after{
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 40%;
+    background-color: red;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%,0);
+    background: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+}
+
+
+#scndtxt{
+    /* margin: 4vh 0; */
+    line-height: 10vh;
+    /* height: 15vh; */
+    /* background-color: yellow; */
+    position: relative;
+    display: flex;
+    font-size: 1.8vw;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#scndtxt h3{
+    font-weight: 500;
+}
+
+#scndtxt .img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 1vw;
+    /* background-color: wheat; */
+    padding: 0vh 1.5vw;
+    /* height: 8vh; */
+    width: 6vw;
+    border: 2px solid black;
+    border-radius: 14px;
+    overflow: hidden;
+}
+#scndtxt .img img{
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+.hara2{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    background-color: rgb(107, 240, 173);
+    position: absolute;
+    left: -100%;
+    transition: left 0.5s ease;
+    /* z-index: -1; */
+
+}
+#scndtxt:hover .hara2{
+    left: 0%;
+    /* background-color: firebrick; */
+}
+#page2{
+    height: 88vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#pg2contents{
+    width: 70vw;
+    color: rgb(252, 247, 247);
+    position: relative;
+    /* top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    /* background-color: #000; */
+    text-align: center;
+
+}
+
+#circle{
+    height: 12vh;
+    width: 16vw;
+    position: absolute;
+    top: 63%;
+    left: 36%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    z-index: 9999;
+    /* background-color: red; */
+}
+
+#pg2contents h3{
+    font-size: 1.5vw;
+    line-height: 15vh;
+}
+#pg2contents h1{
+    font-size: 3.9vw;
+    line-height: 10vh;
+    font-weight: 100;
+    /* letter-spacing: 0.2vw */
+}
+#aboutus{
+    margin-top: 5vh;
+    font-size: 2vw;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#aboutus2{
+    position: relative;
+    margin: 0 1vw;
+    display: flex;
+    /* background-color: red; */
+    z-index: 999;
+    align-items: center;
+    padding: 1vh 1vw;
+    width: 4vw;
+    overflow: hidden;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+#aboutus2 img{
+    height: 100%;
+    width: 100%;
+}
+#aboutus h2{
+    /* margin-top: 5vh; */
+    font-size: 2vw;
+    font-weight: 300;
+}
+.hara3{
+    position: absolute;
+    transition: left ease 0.5s;
+    left: -100%;
+    background-color: rgb(107, 240, 173);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#aboutus2:hover .hara3{
+    left: 0;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+#pg3txt h1::after{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 42%;
+    bottom: -8px;
+    left: 48%;
+    top: 10.2%;
+    transform: translate(-50%,0);
+    background:  url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+}
+#pg3left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 55vw;
+    /* background-color: yellow; */
+}
+#pg3right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 45vw;
+    /* background-color: violet; */
+}
+#subleft{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 6vh;
+    position: relative;
+    height: 100vh;
+    width: 16vw;
+    /* background-color: gray; */
+}
+#subleftma{
+    height: 55vh;
+    width: 12vw;
+    /* background-color: rgb(239, 217, 217); */
+}
+#subleftma img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#subleftmb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#subrightma2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#subrightmb2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#subleftmb{
+    height: 33vh;
+    width: 12vw;
+    /* background-color: rgb(40, 18, 18); */
+}
+
+#subright{
+    position: relative;
+    height: 100vh;
+    width: 45vw;
+    /* background-color: rgb(17, 121, 200); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 6vh;
+}
+#subrightma2{
+    height: 28vh;
+    width: 27vw;
+    /* background-color: rgb(187, 49, 49); */
+}
+#subrightmb2{
+    height: 65vh;
+    width: 35vw;
+    /* background-color: rgb(204, 187, 187); */
+}
+#pg3right h1{
+    font-size: 5vw;
+    line-height: 1;
+    font-weight: 100;
+}
+#pg3right h4{
+    margin-top: 7vh;
+    font-size: 1.5vw;
+    font-weight: 100;
+    line-height: 5vh;
+}
+#pg3contents{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 40vw;
+    /* background-color: rgb(111, 106, 106); */
+    /* line-height: 1; */
+    /* bottom: 7vh; */
+}
+
+#services{
+    margin-top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* background-color: greenyellow; */
+}
+
+#imgname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    width: 13vw;
+    /* background-color: rgb(174, 64, 64); */
+    gap: 1vw;
+}
+
+.imgpic{
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgpic img{
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+#ourservices{
+    height: 8vh;
+    /* width: 5vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 20px 25px;
+    margin: 0 5vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#ourservices:hover .hara3{
+  left: 0%;
+}
+
+#sublefta{
+    height: 50vh;
+    /* background-color: rgb(160, 24, 24); */
+}
+#subleftb{
+    height: 40vh;
+    /* background-color: rgb(40, 18, 18); */
+}
+
+#page4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pg4contents{
+    width: 80vw;
+    position: relative;
+    /* top: 15vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(177, 38, 38); */
+}
+#pg4contents h1{
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 100;
+    text-align: center;
+}
+
+#p4circle{
+    height: 15vh;
+    width: 13vw;
+    position: absolute;
+    top: -2%;
+    left: 19.4%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    z-index: 9;
+}
+#page4 h4{
+    position: relative;
+    font-size: 1.2vw;
+    text-align: center;
+    top: 11vh;
+    /* font-weight: 100; */
+    /* text-align: center; */
+    /* margin-bottom: 4vh; */
+}
+#logos{
+    position: relative;
+    top: 10vh;
+    /* margin: 10vh 0; */
+    height: 50vh;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: flex-start;
+    /* background-color: red; */
+}
+#logos .bx1{
+    height: 8vh;
+    width: 15vw;
+    /* background-color: green; */
+    margin: 0 1vw;
+    padding: 10px 10px;
+}
+
+#logos img{
+    height: 100%;
+    width: 100%;
+}
+
+#page5{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#pg5up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#firstbox{
+    height: 60vh;
+    width: 40vw;
+    /* background-color: red; */
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=800&h=600&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=35b85b4c5bd2f5b6a6d563c6698656ea);
+    background-size: cover;
+    background-position: center;
+    margin: 0 3vw;
+    padding: 0 2vw ;
+    color: #fff;
+    position: relative;
+    z-index: 999999999999;
+}
+.starrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5vw;
+    border: 2px solid black;
+    padding: 0.5vh 1vw;
+    border-radius: 30px;
+    transition: left 0.5s ease;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+    z-index: 999;
+}
+#firstbox h1{
+    position: relative;
+    font-size: 4vw;
+    z-index: 999;
+}
+#firstbox:hover .hara3 {
+    left: 0%;
+    /* background-color: #000; */
+}
+
+#secondbox:hover .hara3 {
+    left: 0%;
+    /* background-color: #000; */
+}
+#secondbox{
+    height: 60vh;
+    width: 40vw;
+    /* background-color: rgb(108, 33, 33); */
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=800&h=600&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=3ec530acdaa9b675833cb4ec0e5472bf);
+    background-size: cover;
+    background-position: center;
+    padding: 0 2vw ;
+    color: #fff;
+
+}
+
+#secondbox h1{
+    position: relative;
+    margin-top: 10vh;
+    font-size: 4vw;
+    z-index: 999;
+}
+.bx2{
+    position: relative;
+    top: 6vh;
+    left: 3vw;
+    height: 7vh;
+    width: 12vw;
+    /* background-color: black; */
+    z-index: 9;
+}
+.bx2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.imgntx{
+    position: relative;
+    top: 5vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* justify-content: center; */
+}
+
+#imgndtxt{
+    position: relative;
+    top: 5vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+}
+.imeg{
+    height: 70px;
+    width: 70px;
+    margin: 0 1.5vw;
+}
+#imgndtxt img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position:center;
+}
+#ourwork{
+    margin: 0 1.5vw;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 2vh 1vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.imag{
+    margin: 0 1vw;
+}
+#ourwork img{
+    height: 100%;
+    width: 100%;
+}
+
+#ourwork:hover .hara3{
+    left: 0;
+}
+
+#page6{
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 80vh;
+    /* width: 80vw; */
+    /* background-color: #08f657; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card h1{
+    width: 65vw;
+    font-size: 5vw;
+    font-weight: 100;
+}
+.belowcntnt{
+    position: relative;
+    margin: 4vh 0 ;
+    line-height: 1.5;
+    font-size: 2vh;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.swlogo{
+    height: 3.5vh;
+    /* width: 19vw; */
+    padding: 0 2vw;
+    /* background-color: red; */
+    margin: 7vh 0 ;
+}
+.swlogoH{
+    height: 11vh;
+    /* width: 19vw; */
+    padding: 0 2vw;
+    /* background-color: red; */
+    margin: 7vh 0 ;
+}
+.swlogofoo{
+    height: 11vh;
+    /* width: 19vw; */
+    padding: 0 2vw;
+    /* background-color: red; */
+    margin: 7vh 0 ;
+}
+.swlogoB{
+    height: 11vh;
+    /* width: 19vw; */
+    padding: 0 2vw;
+    /* background-color: red; */
+    margin: 7vh 0 ;
+}
+
+#page7{
+    margin-top: 22vh;
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+#pg7imgcontents{
+    position: absolute;
+    top: -25vh;
+    height: 50vh;
+    width: 70vw;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=800&h=263&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=998bf309a58d75930705881fb489800a);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+#pg7imgcontents h3::after{
+    content: "";
+    position: absolute;
+    height: 1.2vh ;
+    width: 8vw;
+    background-color: red;
+    top: 29.2%;
+    left: 25.7%;
+    transform: translate(-50%,0);
+    background:  url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+#pg7imgcontents h3{
+    width: 60vw;
+    font-size: 3vw;
+    text-align: center;
+    z-index: 9999;
+    line-height: 1;
+    font-weight: 100;
+}
+#pg7imgbelo{
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#pg7imgbelo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 0.5vw;
+}
+#callback{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    margin: 0 2vw;
+    padding: 0 0.5vw;
+    border-radius: 50px;
+    /* background-color: red; */
+    overflow: hidden;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#callback img{
+    position: relative;
+    margin: 0 1.5vw;
+    z-index: 999;
+}
+
+#callback:hover .hara3{
+    /* background-color: #000; */
+    left: 0%;
+}
+
+#pg7maincontents{
+    height: 70vh;
+    width: 90vw;
+    /* background-color: red; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* padding: 10vh 5vw; */
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    top: 16vh;
+    /* gap: 5vh; */
+}
+#pg71{
+    height: 50vh;
+    width: 85vw;
+    display: flex;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    /* background-color: blue; */
+    position: relative;
+    /* flex-direction: column; */
+    /* padding: 0 2vw; */
+    border-bottom: 2px solid rgb(126, 123, 123);
+}
+#p7circle{
+    height: 13.8vh;
+    /* background-color: red; */
+    width: 20%;
+    position: absolute;
+    top: 10vh;
+    left: -1.3vw;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    
+}
+#col1{
+    width: 23vw;
+    font-size: 3vw;
+    /* background-color: gainsboro; */
+    /* line-height: 1.2; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 2vh;
+}
+#col4{
+    /* position: relative;
+    top: 10vh;
+    left: -4vh; */
+    /* height: 40vh; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 5vh;
+    padding: 1vh 1vw;
+}
+#cont{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+
+    /* justify-content: center; */
+}
+
+#cont img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 1vw;
+}
+#cont h4{
+    font-size: 2vw;
+}
+#cont1{
+    height: 10vh;
+    width: 8vw;
+    /* margin: 5vh; */
+}
+#cont2{
+    height: 16vh;
+    /* margin: 5vh; */
+    width: 8vw;
+}
+#cont3{
+    height: 6vh;
+    width: 8vw;
+}
+#col4 img{
+    height: 100%;
+    width: 100%;
+}
+#pg72{
+    width: 85vw;
+    /* height: 20vh; */
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:first baseline;
+    gap: 8vw;
+}
+#pg72prt1{
+    /* width: 9vw; */
+    /* background-color: rgb(73, 25, 25); */
+    font-size: 2vw;
+}
+#pg72prt2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    /* width: 60vw; */
+    gap: 2vw;
+}
+#pg72prt2 a{
+    color: #fff;
+}
